@@ -1,35 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tarefas+
 
-## Getting Started
+Aplicação web para organização de estudos e tarefas, desenvolvida como parte do curso **Fullstack Pro** do Sujeito Programador.
 
-First, run the development server:
+## ✨ Sobre o projeto
+
+O Tarefas+ é um sistema pensado para ajudar o usuário a organizar seus estudos e tarefas do dia a dia. O projeto está em desenvolvimento e evolui ao longo do curso.
+
+## 🚧 Status atual
+
+- [x] Landing page inicial com apresentação do produto
+- [x] Componente de header com navegação
+- [ ] Autenticação de usuários
+- [ ] Painel do usuário (dashboard)
+- [ ] CRUD de tarefas
+
+## 🛠️ Tecnologias
+
+- [Next.js](https://nextjs.org/) 16 (Pages Router)
+- [React](https://react.dev/) 19
+- [TypeScript](https://www.typescriptlang.org/)
+- CSS Modules
+
+## 📂 Estrutura do projeto
+
+```
+src/
+├── components/
+│   └── header/         # Componente de cabeçalho com navegação
+├── pages/
+│   ├── _app.tsx         # Componente raiz da aplicação
+│   ├── index.tsx        # Landing page
+│   └── api/             # API Routes do Next.js
+styles/                  # Estilos globais e específicos de páginas
+public/                  # Arquivos estáticos (imagens, ícones)
+```
+
+## 🚀 Como rodar o projeto
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Rode o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Outros scripts disponíveis
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run build   # Gera a build de produção
+npm run start   # Sobe a aplicação a partir da build de produção
+npm run lint    # Executa o linter
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 📄 Licença
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# tarefas
+Projeto de estudo, desenvolvido para fins didáticos durante o curso Fullstack Pro.
