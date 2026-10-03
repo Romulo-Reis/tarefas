@@ -10,15 +10,19 @@ O Tarefas+ é um sistema pensado para ajudar o usuário a organizar seus estudos
 
 - [x] Landing page inicial com apresentação do produto
 - [x] Componente de header com navegação
-- [ ] Autenticação de usuários
-- [ ] Painel do usuário (dashboard)
-- [ ] CRUD de tarefas
+- [x] Autenticação de usuários (via NextAuth.js e Google)
+- [x] Configuração de conexão com Firebase (Firestore)
+- [x] Painel do usuário (dashboard) com listagem de tarefas
+- [x] Registro de tarefas no Firestore
+- [ ] CRUD completo de tarefas (Edição e Exclusão)
 
 ## 🛠️ Tecnologias
 
 - [Next.js](https://nextjs.org/) 16 (Pages Router)
 - [React](https://react.dev/) 19
 - [TypeScript](https://www.typescriptlang.org/)
+- [Firebase](https://firebase.google.com/) (Firestore)
+- [NextAuth.js](https://next-auth.js.org/) (Autenticação)
 - CSS Modules
 
 ## 📂 Estrutura do projeto
@@ -31,6 +35,7 @@ src/
 │   ├── _app.tsx         # Componente raiz da aplicação
 │   ├── index.tsx        # Landing page
 │   └── api/             # API Routes do Next.js
+├── services/            # Serviços externos (Firebase, etc)
 styles/                  # Estilos globais e específicos de páginas
 public/                  # Arquivos estáticos (imagens, ícones)
 ```
